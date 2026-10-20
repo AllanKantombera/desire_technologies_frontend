@@ -57,7 +57,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.6)); /* Darker overlay for text readability */
+            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.6));
             z-index: -1;
         }
 
@@ -77,7 +77,7 @@
             bottom: -4px;
             left: 0;
             height: 3px;
-            background-color: #60a5fa; /* primary-400 */
+            background-color: #60a5fa;
             width: 0%;
             transition: width 0.1s linear;
         }
@@ -90,23 +90,21 @@
             color: #ffffff !important;
         }
 
-                /* Dropdown Styles FIXED */
+        /* Dropdown Styles FIXED */
         .dropdown {
             position: relative;
         }
 
         .dropdown-menu {
-            display: block; /* Keep display block for transition */
+            display: block;
             visibility: hidden;
             opacity: 0;
             transform: translateY(10px);
             transition: all 0.2s ease;
             pointer-events: none;
-            /* Add padding to bridge the gap between button and menu */
             padding-top: 10px; 
         }
 
-        /* Create an invisible bridge area */
         .dropdown-menu::before {
             content: '';
             position: absolute;
@@ -131,7 +129,7 @@
         }
 
         .mobile-menu.open {
-            max-height: 800px; /* Increased for dropdowns */
+            max-height: 800px;
         }
     </style>
 </head>
@@ -148,7 +146,6 @@
                     </div>
                     
                     <!-- Desktop Navigation with Dropdowns -->
-                                        <!-- Desktop Navigation with Dropdowns -->
                     <div class="hidden md:ml-6 md:flex md:space-x-4">
                         <a href="index.html" class="inline-flex items-center px-1 pt-1 border-b-2 border-primary-500 text-sm font-medium text-gray-900">Home</a>
                         
@@ -205,7 +202,6 @@
                 <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-50 border-t">
                     <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 bg-white">Home</a>
                     
-                    <!-- Mobile Dropdowns -->
                     <div class="block">
                         <button class="w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-50 flex justify-between items-center mobile-dropdown-toggle">
                             Courses <i class="fas fa-chevron-down text-sm"></i>
@@ -243,7 +239,7 @@
     <section class="relative h-[600px] md:h-[700px] overflow-hidden bg-gray-900" id="hero-container">
         
         <!-- Slide 1 -->
-        <div class="hero-slide active" id="slide-0" style="background-image: url('img/img (1).jpg');">
+        <div class="hero-slide active" id="slide-0" style="background-image: url('img/img\ 5.jpg');">
             <div class="hero-text-container h-full flex items-center">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                     <div class="max-w-2xl">
@@ -260,7 +256,7 @@
         </div>
 
         <!-- Slide 2 -->
-        <div class="hero-slide" id="slide-1" style="background-image: url('img/img (2).jpg');">
+        <div class="hero-slide" id="slide-1" style="background-image: url('img/img\ 6.jpg');">
             <div class="hero-text-container h-full flex items-center">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                     <div class="max-w-2xl">
@@ -277,7 +273,7 @@
         </div>
 
         <!-- Slide 3 -->
-        <div class="hero-slide" id="slide-2" style="background-image: url('img/img (2).png');">
+        <div class="hero-slide" id="slide-2" style="background-image: url('img/img\ 7.jpg');">
             <div class="hero-text-container h-full flex items-center">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                     <div class="max-w-2xl">
@@ -294,7 +290,7 @@
         </div>
 
         <!-- Slide 4 -->
-        <div class="hero-slide" id="slide-3" style="background-image: url('img/img (3).png');">
+        <div class="hero-slide" id="slide-3" style="background-image: url('img/img\ 8.jpg');">
             <div class="hero-text-container h-full flex items-center">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                     <div class="max-w-2xl">
@@ -311,7 +307,7 @@
         </div>
 
         <!-- Slide 5 -->
-        <div class="hero-slide" id="slide-4" style="background-image: url('img/img (4).png');">
+        <div class="hero-slide" id="slide-4" style="background-image: url('img/dg.jpg');">
             <div class="hero-text-container h-full flex items-center">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                     <div class="max-w-2xl">
@@ -372,115 +368,188 @@
         </div>
     </section>
 
-    <!-- Rest of the content (Free Courses, Premium, etc.) -->
-    <section class="py-16 bg-white">
+    <!-- Redesigned Free Courses Section -->
+    <section class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
+            <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-gray-900">Learn for Free</h2>
                 <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Get started with robotics, Arduino basics, and beginner programming with our free resources.</p>
             </div>
 
-            <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group">
-                    <div class="relative h-48 bg-gray-200 overflow-hidden">
-                        <img src="img/img (1).jpg" alt="Intro to Robotics" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute -bottom-6 left-6 z-10">
-                            <div class="flex items-center justify-center w-12 h-12 rounded-md bg-white shadow-lg text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-colors">
-                                <i class="fas fa-book-open text-lg"></i>
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                
+                <!-- Card 1 -->
+                <div class="relative group rounded-2xl overflow-hidden shadow-lg h-[400px] cursor-pointer">
+                    <img src="img/img (1).jpg" alt="Intro to Robotics" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <!-- Dark Transparent Overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6 transition-opacity duration-300 group-hover:bg-black/60">
+                        <div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                            <span class="inline-block px-3 py-1 bg-primary-600 text-white text-xs font-semibold rounded-full mb-3 uppercase tracking-wider">Free Course</span>
+                            <h3 class="text-2xl font-bold text-white mb-2">Intro to Robotics</h3>
+                            <p class="text-gray-200 text-sm mb-4 line-clamp-2">Learn robotics fundamentals, safety protocols, and Arduino basics with step-by-step guides.</p>
+                            
+                            <div class="flex items-center text-sm text-gray-300 mb-5">
+                                <i class="fas fa-play-circle mr-2 text-primary-400"></i>
+                                <span>5 video lessons</span>
+                                <span class="mx-2">•</span>
+                                <i class="fas fa-clock mr-2 text-primary-400"></i>
+                                <span>2 hours</span>
                             </div>
+
+                            <button class="w-full bg-white text-gray-900 hover:bg-primary-50 hover:text-primary-700 font-semibold py-3 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center">
+                                Start Learning <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
                         </div>
                     </div>
-                    <div class="pt-8 p-6">
-                        <h3 class="text-xl font-semibold text-gray-900">Intro to Robotics</h3>
-                        <p class="mt-2 text-gray-600">Learn robotics fundamentals, safety protocols, and Arduino basics with step-by-step guides.</p>
-                        <div class="mt-4 flex items-center text-sm text-gray-500">
-                            <i class="fas fa-play-circle mr-1"></i>
-                            <span>5 video lessons</span>
-                            <span class="mx-2">•</span>
-                            <i class="fas fa-clock mr-1"></i>
-                            <span>2 hours</span>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="relative group rounded-2xl overflow-hidden shadow-lg h-[400px] cursor-pointer">
+                    <img src="img/img (2).jpg" alt="Basic Projects" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6 transition-opacity duration-300 group-hover:bg-black/60">
+                        <div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                            <span class="inline-block px-3 py-1 bg-primary-600 text-white text-xs font-semibold rounded-full mb-3 uppercase tracking-wider">Free Projects</span>
+                            <h3 class="text-2xl font-bold text-white mb-2">Basic Projects</h3>
+                            <p class="text-gray-200 text-sm mb-4 line-clamp-2">Build traffic lights, line followers, and simple robotic arms with free simulations and examples.</p>
+                            
+                            <div class="flex items-center text-sm text-gray-300 mb-5">
+                                <i class="fas fa-project-diagram mr-2 text-primary-400"></i>
+                                <span>7 projects</span>
+                                <span class="mx-2">•</span>
+                                <i class="fas fa-code mr-2 text-primary-400"></i>
+                                <span>Simulations</span>
+                            </div>
+
+                            <button class="w-full bg-white text-gray-900 hover:bg-primary-50 hover:text-primary-700 font-semibold py-3 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center">
+                                Try Simulation <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
                         </div>
                     </div>
-                    <div class="px-6 py-4 bg-white border-t border-gray-100">
-                        <button class="w-full bg-primary-600 hover:bg-primary-700 text-white py-2 px-4 rounded-md text-sm font-medium transition-colors">
-                            Start Learning
+                </div>
+
+                <!-- Card 3 -->
+                <div class="relative group rounded-2xl overflow-hidden shadow-lg h-[400px] cursor-pointer">
+                    <img src="img/img (3).png" alt="DIY Corner" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6 transition-opacity duration-300 group-hover:bg-black/60">
+                        <div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                            <span class="inline-block px-3 py-1 bg-primary-600 text-white text-xs font-semibold rounded-full mb-3 uppercase tracking-wider">Maker Space</span>
+                            <h3 class="text-2xl font-bold text-white mb-2">DIY Corner</h3>
+                            <p class="text-gray-200 text-sm mb-4 line-clamp-2">Maker challenges using recycled materials and 3D-print projects. Build creative solutions with limited resources.</p>
+                            
+                            <div class="flex items-center text-sm text-gray-300 mb-5">
+                                <i class="fas fa-recycle mr-2 text-primary-400"></i>
+                                <span>Eco-friendly</span>
+                                <span class="mx-2">•</span>
+                                <i class="fas fa-print mr-2 text-primary-400"></i>
+                                <span>3D models</span>
+                            </div>
+
+                            <button class="w-full bg-white text-gray-900 hover:bg-primary-50 hover:text-primary-700 font-semibold py-3 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center">
+                                View Challenges <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- New Products Section with Add to Cart -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-end mb-10">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900">Featured Hardware</h2>
+                    <p class="mt-2 text-lg text-gray-600">Gear up with the latest kits and components for your builds.</p>
+                </div>
+                <a href="shop.html" class="hidden sm:inline-flex items-center text-primary-600 font-medium hover:text-primary-700">
+                    View All Products <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                
+                <!-- Product 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 group flex flex-col">
+                    <div class="relative h-64 bg-gray-100 overflow-hidden">
+                        <img src="img/img (2).png" alt="Arduino Starter Kit" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <!-- Badge -->
+                        <div class="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">Best Seller</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-gray-900">Arduino Starter Kit</h3>
+                            <span class="text-lg font-bold text-primary-600">$49.99</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-6 flex-grow">Complete kit with Arduino Uno R3, breadboard, sensors, and jumper wires for beginners.</p>
+                        
+                        <button class="w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center shadow-sm">
+                            <i class="fas fa-cart-plus mr-2"></i> Add to Cart
                         </button>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group">
-                    <div class="relative h-48 bg-gray-200 overflow-hidden">
-                        <img src="img/img (2).jpg" alt="Basic Projects" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute -bottom-6 left-6 z-10">
-                            <div class="flex items-center justify-center w-12 h-12 rounded-md bg-white shadow-lg text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-colors">
-                                <i class="fas fa-laptop-code text-lg"></i>
-                            </div>
-                        </div>
+                <!-- Product 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 group flex flex-col">
+                    <div class="relative h-64 bg-gray-100 overflow-hidden">
+                        <img src="img/img (4).png" alt="Robotic Arm" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-4 left-4 bg-gray-900 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">New Arrival</div>
                     </div>
-                    <div class="pt-8 p-6">
-                        <h3 class="text-xl font-semibold text-gray-900">Basic Projects</h3>
-                        <p class="mt-2 text-gray-600">Build traffic lights, line followers, and simple robotic arms with free simulations and examples.</p>
-                        <div class="mt-4 flex items-center text-sm text-gray-500">
-                            <i class="fas fa-project-diagram mr-1"></i>
-                            <span>7 projects</span>
-                            <span class="mx-2">•</span>
-                            <i class="fas fa-code mr-1"></i>
-                            <span>Simulations included</span>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-gray-900">6-DOF Robotic Arm</h3>
+                            <span class="text-lg font-bold text-primary-600">$129.00</span>
                         </div>
-                    </div>
-                    <div class="px-6 py-4 bg-white border-t border-gray-100">
-                        <button class="w-full bg-primary-600 hover:bg-primary-700 text-white py-2 px-4 rounded-md text-sm font-medium transition-colors">
-                            Try Simulation
+                        <p class="text-gray-600 text-sm mb-6 flex-grow">Acrylic robotic arm with metal gear servos. Perfect for learning inverse kinematics and automation.</p>
+                        
+                        <button class="w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center shadow-sm">
+                            <i class="fas fa-cart-plus mr-2"></i> Add to Cart
                         </button>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group">
-                    <div class="relative h-48 bg-gray-200 overflow-hidden">
-                        <img src="img/img (3).png" alt="DIY Corner" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute -bottom-6 left-6 z-10">
-                            <div class="flex items-center justify-center w-12 h-12 rounded-md bg-white shadow-lg text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-colors">
-                                <i class="fas fa-cogs text-lg"></i>
-                            </div>
-                        </div>
+                <!-- Product 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 group flex flex-col">
+                    <div class="relative h-64 bg-gray-100 overflow-hidden">
+                        <img src="img/img (1).jpg" alt="Sensor Pack" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <div class="pt-8 p-6">
-                        <h3 class="text-xl font-semibold text-gray-900">DIY Corner</h3>
-                        <p class="mt-2 text-gray-600">Maker challenges using recycled materials and 3D-print projects. Build creative solutions with limited resources.</p>
-                        <div class="mt-4 flex items-center text-sm text-gray-500">
-                            <i class="fas fa-recycle mr-1"></i>
-                            <span>Eco-friendly</span>
-                            <span class="mx-2">•</span>
-                            <i class="fas fa-print mr-1"></i>
-                            <span>3D models</span>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-gray-900">IoT Sensor Pack</h3>
+                            <span class="text-lg font-bold text-primary-600">$34.50</span>
                         </div>
-                    </div>
-                    <div class="px-6 py-4 bg-white border-t border-gray-100">
-                        <button class="w-full bg-primary-600 hover:bg-primary-700 text-white py-2 px-4 rounded-md text-sm font-medium transition-colors">
-                            View Challenges
+                        <p class="text-gray-600 text-sm mb-6 flex-grow">Includes Ultrasonic, PIR, Temperature, Humidity, and Gyroscope modules for your smart projects.</p>
+                        
+                        <button class="w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center shadow-sm">
+                            <i class="fas fa-cart-plus mr-2"></i> Add to Cart
                         </button>
                     </div>
                 </div>
+
             </div>
             
-            <div class="mt-12 text-center">
-                <a href="courses.html" class="inline-flex items-center text-primary-600 font-medium hover:text-primary-700">
-                    Explore all free resources <i class="fas fa-arrow-right ml-2"></i>
+            <div class="mt-10 text-center sm:hidden">
+                <a href="shop.html" class="inline-flex items-center text-primary-600 font-medium hover:text-primary-700">
+                    View All Products <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-16 bg-primary-600 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold">Ready to Start Your STEM Journey?</h2>
-            <p class="mt-4 text-xl max-w-2xl mx-auto">Join thousands of students and professionals learning robotics and automation.</p>
-            <div class="mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <a href="#" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-primary-600 bg-white hover:bg-gray-100">
+    <section class="py-16 bg-primary-800 text-white relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-3xl md:text-4xl font-bold">Ready to Start Your STEM Journey?</h2>
+            <p class="mt-4 text-xl max-w-2xl mx-auto text-primary-100">Join thousands of students and professionals learning robotics and automation.</p>
+            <div class="mt-10 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-primary-700 bg-white hover:bg-gray-100 shadow-lg transition-transform hover:-translate-y-1">
                     <i class="fas fa-rocket mr-2"></i> Start Free Lesson
                 </a>
-                <a href="#" class="inline-flex items-center justify-center px-6 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-primary-700">
+                <a href="#" class="inline-flex items-center justify-center px-8 py-3 border border-white text-base font-medium rounded-full text-white hover:bg-primary-700 transition-transform hover:-translate-y-1">
                     <i class="fas fa-crown mr-2"></i> Upgrade Now
                 </a>
             </div>
@@ -488,7 +557,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-300">
+    <footer class="bg-gray-900 text-gray-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="col-span-1">
@@ -498,50 +567,58 @@
                     </div>
                     <p class="mt-4 text-gray-400">Master robotics and automation with our comprehensive learning platform. Start free or upgrade for professional content.</p>
                     <div class="mt-6 flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-x"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-primary-600 transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-primary-600 transition-colors"><i class="fab fa-x"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-primary-600 transition-colors"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
 
                 <div class="col-span-1">
                     <h3 class="text-lg font-semibold text-white mb-4">Free Resources</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-white">Intro to Robotics</a></li>
-                        <li><a href="#" class="hover:text-white">Basic Projects</a></li>
-                        <li><a href="#" class="hover:text-white">Beginner Programming</a></li>
-                        <li><a href="#" class="hover:text-white">STEM Kits for Schools</a></li>
-                        <li><a href="#" class="hover:text-white">DIY Corner</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">Intro to Robotics</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">Basic Projects</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">Beginner Programming</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">STEM Kits for Schools</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">DIY Corner</a></li>
                     </ul>
                 </div>
 
                 <div class="col-span-1">
                     <h3 class="text-lg font-semibold text-white mb-4">Premium Courses</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-white">Intermediate Robotics</a></li>
-                        <li><a href="#" class="hover:text-white">Applied Automation</a></li>
-                        <li><a href="#" class="hover:text-white">Industrial Automation</a></li>
-                        <li><a href="#" class="hover:text-white">Advanced Programming</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">Intermediate Robotics</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">Applied Automation</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">Industrial Automation</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition-colors">Advanced Programming</a></li>
                     </ul>
                 </div>
 
                 <div class="col-span-1">
                     <h3 class="text-lg font-semibold text-white mb-4">Contact Us</h3>
-                    <ul class="space-y-2">
+                    <ul class="space-y-3">
                         <li class="flex items-start">
-                            <i class="fas fa-envelope mt-1 mr-2 text-primary-400"></i>
+                            <i class="fas fa-envelope mt-1 mr-3 text-primary-400"></i>
                             <span>support@dt.com</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-phone mt-1 mr-2 text-primary-400"></i>
+                            <i class="fas fa-phone mt-1 mr-3 text-primary-400"></i>
                             <span>+265 999 000 000</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-primary-400"></i>
+                            <span>Lilongwe, Malawi</span>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="mt-12 pt-8 border-t border-gray-700 text-center text-gray-400">
+            <div class="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-gray-500">
                 <p>© 2025 DESIRE Technologies. All rights reserved.</p>
+                <div class="mt-4 md:mt-0 space-x-4">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
@@ -634,8 +711,6 @@
                 tab.addEventListener('click', () => {
                     stopSlideshow();
                     goToSlide(index);
-                    // Optional: restart slideshow after user interaction
-                    // setTimeout(startSlideshow, 10000); 
                 });
             });
 
